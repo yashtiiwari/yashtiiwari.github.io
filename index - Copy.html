@@ -1,0 +1,551 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LearnHub - Online Courses</title>
+        <link rel="stylesheet" href="project.css">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="header"  >
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>LearnHub</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none;"></i>
+    </button>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="user-actions">
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign Up</button>
+            </div>
+        </header>
+            <section class="hero">
+            <div class="hero-content">
+                <h1>Unlock Your Potential with Online Learning</h1>
+                <p>Join thousands of students mastering new skills with our interactive courses. Start your learning journey today!</p>
+                <div class="hero-buttons">
+                    <button class="btn primary-btn">Browse Courses</button>
+                    <button class="btn secondary-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Students learning together">
+            </div>
+        </section>
+            <section class="courses">
+            <div class="section-header">
+                <h2>Featured Courses</h2>
+                <p>Discover our most popular courses to boost your skills</p>
+            </div>
+    
+
+        <!-- NEW: Course Filter Buttons -->
+        <div class="course-filters">
+            <button class="filter-btn active" data-filter="all">All Courses</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="data">Data Science</button>
+            <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Development</button>
+        </div>
+
+        <div class="course-grid">
+            <!-- Existing course cards (add data-category attributes) -->
+            <div class="course-card" data-category="web">
+                <!-- ... (keep existing content) ... -->
+            </div>
+            <div class="course-card" data-category="data">
+                <!-- ... (keep existing content) ... -->
+            </div>
+            <!-- ... (repeat for all cards) ... -->
+        </div>
+    </section>
+            <div class="course-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-badge">Bestseller</div>
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p class="course-description">Learn HTML, CSS, JavaScript, React and more in this comprehensive course.</p>
+                        <div class="course-meta">
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i> 4.8 (1,240)
+                            </span>
+                            <span class="course-duration">
+                                <i class="far fa-clock"></i> 45 hours
+                            </span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$89.99</span>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Data Science">
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science Fundamentals</h3>
+                        <p class="course-description">Master Python, Pandas, NumPy and data visualization tools.</p>
+                        <div class="course-meta">
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i> 4.7 (890)
+                            </span>
+                            <span class="course-duration">
+                                <i class="far fa-clock"></i> 32 hours
+                            </span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$74.99</span>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-badge">New</div>
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Digital Marketing">
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing Masterclass</h3>
+                        <p class="course-description">SEO, Social Media, Google Ads and Email Marketing strategies.</p>
+                        <div class="course-meta">
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i> 4.6 (650)
+                            </span>
+                            <span class="course-duration">
+                                <i class="far fa-clock"></i> 28 hours
+                            </span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$64.99</span>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mobile Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Mobile App Development with Flutter</h3>
+                        <p class="course-description">Build cross-platform apps for iOS and Android using Flutter.</p>
+                        <div class="course-meta">
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i> 4.9 (1,540)
+                            </span>
+                            <span class="course-duration">
+                                <i class="far fa-clock"></i> 38 hours
+                            </span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$79.99</span>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <button class="btn secondary-btn">View All Courses</button>
+            </div>
+        </section>
+        <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Students Say</h2>
+            <p>Join thousands of satisfied learners who transformed their careers</p>
+        </div>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+            let slideInterval;
+
+            // Function to show a specific slide
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentSlide = index;
+            }
+
+            // Auto-rotate slides every 5 seconds
+            function startCarousel() {
+                slideInterval = setInterval(() => {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                }, 5000);
+            }
+
+            // Pause on hover (optional)
+            const carousel = document.querySelector('.testimonial-carousel');
+            carousel.addEventListener('mouseenter', () => clearInterval(slideInterval));
+            carousel.addEventListener('mouseleave', startCarousel);
+
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    showSlide(parseInt(dot.dataset.slide));
+                    startCarousel();
+                });
+            });
+
+            // Initialize
+            showSlide(0);
+            startCarousel();
+        });
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Info Column -->
+            <div class="footer-column">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>LearnHub</span>
+                </div>
+                <p class="footer-about">
+                    Empowering learners worldwide with accessible, high-quality online education since 2020.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Courses Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Popular Courses</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Cloud Computing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Education St, Learning City, 10101</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@learnhub.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2023 LearnHub. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navbar = document.querySelector('.navbar');
+        const searchBox = document.querySelector('.search-box');
+        const userActions = document.querySelector('.user-actions');
+        const navLinks = document.querySelector('.nav-links');
+        const barsIcon = mobileMenuToggle.querySelector('.fa-bars');
+        const timesIcon = mobileMenuToggle.querySelector('.fa-times');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle menu visibility
+            navbar.classList.toggle('active');
+            searchBox.classList.toggle('active');
+            userActions.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            
+            // Toggle icons (hamburger ↔ X)
+            barsIcon.style.display = isExpanded ? 'block' : 'none';
+            timesIcon.style.display = isExpanded ? 'none' : 'block';
+            
+            // Update ARIA attribute for accessibility
+            mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const courseCards = document.querySelectorAll('.course-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+
+                    // Show/hide courses based on filter
+                    courseCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => { card.style.opacity = '1'; }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => { card.style.display = 'none'; }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Auto-detects your existing structure
+            const testimonialGrid = document.querySelector('.testimonial-grid');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const dotsContainer = document.createElement('div');
+            dotsContainer.className = 'carousel-dots';
+            
+            // Create dots if they don't exist
+            if (!document.querySelector('.carousel-dots')) {
+                testimonialCards.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.className = `dot ${i === 0 ? 'active' : ''}`;
+                    dot.dataset.index = i;
+                    dotsContainer.appendChild(dot);
+                });
+                testimonialGrid.appendChild(dotsContainer);
+            }
+
+            const dots = document.querySelectorAll('.dot');
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            // Enhanced showSlide (works with your existing CSS)
+            function showSlide(index) {
+                testimonialCards.forEach(card => card.style.opacity = '0');
+                setTimeout(() => {
+                    testimonialCards.forEach(card => card.style.display = 'none');
+                    testimonialCards[index].style.display = 'block';
+                    setTimeout(() => testimonialCards[index].style.opacity = '1', 10);
+                }, 300);
+
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+                currentIndex = index;
+            }
+
+            // Auto-rotation with pause on hover
+            function startCarousel() {
+                autoSlideInterval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % testimonialCards.length;
+                    showSlide(currentIndex);
+                }, 5000);
+            }
+
+            // Event delegation for dots (works with dynamically added dots)
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('dot')) {
+                    clearInterval(autoSlideInterval);
+                    showSlide(parseInt(e.target.dataset.index));
+                    startCarousel();
+                }
+            });
+
+            // Touch support for mobile
+            let touchStartX = 0;
+            testimonialGrid.addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+                clearInterval(autoSlideInterval);
+            }, { passive: true });
+
+            testimonialGrid.addEventListener('touchend', (e) => {
+                const touchEndX = e.changedTouches[0].clientX;
+                if (touchStartX - touchEndX > 50) { // Swipe left
+                    currentIndex = (currentIndex + 1) % testimonialCards.length;
+                } else if (touchEndX - touchStartX > 50) { // Swipe right
+                    currentIndex = (currentIndex - 1 + testimonialCards.length) % testimonialCards.length;
+                }
+                showSlide(currentIndex);
+                startCarousel();
+            }, { passive: true });
+
+            // Initialize
+            testimonialCards.forEach(card => card.style.display = 'none');
+            showSlide(0);
+            startCarousel();
+        });
+    </script>
+    <script>
+    // Dark Mode Toggle
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.className = 'dark-mode-toggle';
+    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    darkModeToggle.ariaLabel = 'Toggle dark mode';
+
+    // Insert into header
+    document.querySelector('.header').appendChild(darkModeToggle);
+
+    // Check localStorage for preference
+    if (localStorage.getItem('darkMode')) {  // ✅ Fixed the parenthesis
+    document.body.classList.add('dark-mode');
+    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    // Toggle functionality
+    darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    
+    localStorage.setItem('darkMode', isDark);
+    darkModeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+    </script>
+
+    <script>
+    // Loading Skeleton
+    function showSkeleton() {
+    const skeletonHtml = `
+        <div class="skeleton skeleton-header"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text" style="width: 80%"></div>
+    `;
+    
+    document.querySelectorAll('.course-card, .testimonial-card').forEach(card => {
+        card.innerHTML = skeletonHtml;
+        card.classList.add('loading');
+    });
+    }
+
+    function hideSkeleton() {
+    document.querySelectorAll('.course-card, .testimonial-card').forEach(card => {
+        card.classList.remove('loading');
+        // Your original content will reappear since we didn't actually remove it
+    });
+    }
+
+    // Example usage (call these when loading data):
+    // showSkeleton();
+    // fetchData().then(hideSkeleton);
+    </script>
+    <script>
+    // Enhanced Mobile Menu
+    document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    const backdrop = document.createElement('div');
+    backdrop.className = 'menu-backdrop';
+
+    document.body.appendChild(backdrop);
+
+    // Rest of your menu logic here...
+    });
+
+    document.body.appendChild(backdrop);
+
+    // Swipe to close
+    let touchStartX = 0;
+    navbar.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    navbar.addEventListener('touchmove', (e) => {
+    if (touchStartX - e.touches[0].clientX > 50) {
+        closeMenu();
+    }
+    }, { passive: true });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navbar.classList.contains('active')) {
+        closeMenu();
+    }
+    });
+
+    function toggleMenu() {
+    navbar.classList.toggle('active');
+    backdrop.classList.toggle('active');
+    navbar.classList.toggle('show');
+    }
+
+    function closeMenu() {
+    navbar.classList.remove('active', 'show');
+    backdrop.classList.remove('active');
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMenu);
+    backdrop.addEventListener('click', closeMenu);
+
+    // Focus trapping
+    navbar.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab' && !navbar.contains(document.activeElement)) {
+        e.preventDefault();
+        navbar.querySelector('a').focus();
+    }
+    }); // ✅ Added missing closing brace
+    </script>
+
+    </body>
+    </html>
